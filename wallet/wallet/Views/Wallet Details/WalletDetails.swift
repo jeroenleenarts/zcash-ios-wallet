@@ -87,7 +87,7 @@ struct WalletDetails: View {
                             }.isDetailLink(true)
                         .listRowBackground(Color.zDarkGray2)
                         .frame(height: 69)
-                        .padding(.horizontal, 16)
+//                        .padding(.horizontal, 16)
                         .cornerRadius(0)
                         .border(Color.zGray, width: 1)
                         .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
@@ -98,10 +98,11 @@ struct WalletDetails: View {
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.zGray, lineWidth: 1.0)
+                        .padding(.horizontal, 16)
                 )
-                    .padding()
+//                    .padding()
                 
-                Spacer()
+//                Spacer()
                 
             }
         }
@@ -112,8 +113,8 @@ struct WalletDetails: View {
             
         }
         .onDisappear() {
-            UITableView.appearance().separatorStyle = .singleLine
-            UITableView.appearance().backgroundColor = UIColor.white
+//            UITableView.appearance().separatorStyle = .singleLine
+//            UITableView.appearance().backgroundColor = UIColor.white
         }
         .edgesIgnoringSafeArea([.bottom])
         .navigationBarItems(trailing:
